@@ -66,7 +66,7 @@ func (addon ScriptRunnerAddon) Install(args ...string) {
 
 	for _, node := range addon.nodes {
 		scriptRemotePath := fmt.Sprintf("/tmp/script-%s-%d.sh", time.Now().Format("20060102150405"), rand.Int31())
-		err = addon.communicator.WriteFile(node, scriptRemotePath, string(scriptContents), true)
+		err = addon.communicator.WriteFile(node, scriptRemotePath, string(scriptContents), clustermanager.AllExecute)
 		FatalOnError(err)
 
 		output, err := addon.communicator.RunCmd(

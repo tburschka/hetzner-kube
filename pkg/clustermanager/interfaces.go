@@ -12,7 +12,7 @@ const (
 	AllExecute FilePermission = "C0755"
 )
 
-// NodeCommunicator is the interface used to define a node comunication protocol
+// NodeCommunicator is the interface used to define a node communication protocol
 type NodeCommunicator interface {
 	RunCmd(node Node, command string) (string, error)
 	WriteFile(node Node, filePath string, content string, permission FilePermission) error

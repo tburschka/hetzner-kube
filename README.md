@@ -6,6 +6,16 @@
 
 # hetzner-kube: fast and easy setup of kubernetes clusters on Hetzner Cloud
 
+---
+
+## NOTE: This is a fork witch merged several branches
+
+* [Make CNI configurable and add Calico as an option](https://github.com/xetys/hetzner-kube/pull/308)
+* [Script Runner addon](https://github.com/xetys/hetzner-kube/pull/229)
+* [ufw addon](https://github.com/xetys/hetzner-kube/pull/228)
+
+----
+
 This project contains a CLI tool to easily provision [kubernetes](https://kubernetes.io) clusters
 on [Hetzner Cloud](https://hetzner.com/cloud).
 
